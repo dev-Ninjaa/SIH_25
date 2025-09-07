@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![SIH 2025](https://img.shields.io/badge/SIH%202025-Winner-gold?style=for-the-badge&logo=trophy)
+![SIH 2025](https://img.shields.io/badge/SIH%202025-INTERNAL-gold?style=for-the-badge&logo=trophy)
 ![Problem ID](https://img.shields.io/badge/Problem%20ID-25051-blue?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Category-Hardware-green?style=for-the-badge)
 
