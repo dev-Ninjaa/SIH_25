@@ -141,7 +141,7 @@ Our system embodies the **solarpunk ideology** of technology serving community r
 
 ### **Phase 2: Enhanced MVP (8-12 weeks)**
 ```
-🔹 Multi-node support (5+ households)
+🔹 Multi-node system
 🔹 Historical data & analytics
 🔹 User authentication system
 🔹 Advanced sharing algorithms
@@ -186,19 +186,8 @@ Our system embodies the **solarpunk ideology** of technology serving community r
 ### **⚡ Quick Start Guide**
 ```bash
 # Clone the repository
-git clone https://github.com/dev-Ninjaa/SIH_25_PVT.git
-cd SIH_25_PVT
-
-# Setup development environment
-docker-compose up -d
-
-# Install dependencies
-npm install
-pip install -r requirements.txt
-
-# Start development servers
-npm run dev:api &
-npm run dev:frontend &
+git clone https://github.com/dev-Ninjaa/SIH_25.git
+cd SIH_25
 ```
 
 ---
@@ -218,7 +207,7 @@ npm run dev:frontend &
 - **🏘️ Rural Empowerment** - Technology that serves community needs
 
 ### **🔬 Technical Feasibility**
-- **💸 Cost Effective** - <$200 per household using affordable components
+- **💸 Cost Effective** - <$250 - 500 per household using affordable components
 - **🛠️ Easy Deployment** - Compatible with existing microgrid infrastructure  
 - **📞 Rural Ready** - Works with 3G connectivity and intermittent internet
 - **🔧 Maintainable** - Simple, robust design with local repair capabilities
@@ -240,10 +229,8 @@ npm run dev:frontend &
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-Ninjaa/SIH_25_PVT)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-Ninjaa/SIH_25)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/im_ninjaa)
 
 </div>
 
@@ -257,7 +244,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 <div align="center">
 
-### 💚 Built with Love for SIH 2025
+### 💚 Built for SIH 2025
 
 **Making Rural Energy Access a Reality, One Community at a Time**
 
