@@ -1,0 +1,281 @@
+@import url("https://fonts.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+@theme {
+--color-background: #0c1110;
+--color-foreground: #e9eeec;
+--color-card: #141917;
+--color-card-foreground: #e9eeec;
+--color-popover: #141917;
+--color-popover-foreground: #e9eeec;
+--color-primary: #2ed3b7;
+--color-primary-foreground: #061312;
+--color-secondary: #1a201e;
+--color-secondary-foreground: #d7dedb;
+--color-muted: #1a1f1d;
+--color-muted-foreground: #8a9590;
+--color-accent: #f0b289;
+--color-accent-foreground: #0f1311;
+--color-destructive: #ef4444;
+--color-destructive-foreground: #0b0c0e;
+--color-border: #232825;
+--color-input: #232825;
+--color-ring: #2ed3b7;
+--color-chart-1: #2ed3b7;
+--color-chart-2: #f0b289;
+--color-chart-3: #22c55e;
+--color-chart-4: #64d7c2;
+--color-chart-5: #ef4444;
+--color-sidebar: #0e1311;
+--color-sidebar-foreground: #c9d2ce;
+--color-sidebar-primary: #2ed3b7;
+--color-sidebar-primary-foreground: #061312;
+--color-sidebar-accent: #141a18;
+--color-sidebar-accent-foreground: #d1d9d6;
+--color-sidebar-border: #222826;
+--color-sidebar-ring: #2ed3b7;
+--radius-lg: 0.75rem;
+--radius-md: calc(0.75rem - 2px);
+--radius-sm: calc(0.75rem - 4px);
+--animate-accordion-down: accordion-down 0.2s ease-out;
+@keyframes accordion-down {
+from { height: 0; }
+to { height: var(--radix-accordion-content-height); }
+}
+--animate-accordion-up: accordion-up 0.2s ease-out;
+@keyframes accordion-up {
+from { height: var(--radix-accordion-content-height); }
+to { height: 0; }
+}
+--color-surface-1: #121715;
+--color-surface-2: #181d1b;
+--color-success: #22c55e;
+--color-warning: #f4c76b;
+--color-danger: #ef5a7a;
+--font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@layer base {
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+border-color: var(--color-border);
+}
+}
+@layer utilities {
+body {
+font-family: var(--font-sans);
+}
+}
+@layer base {
+:root {
+/* Light theme (default) */
+--background: #f7faf9;
+--foreground: #0b1110;
+--card: #ffffff;
+--card-foreground: #0b1110;
+--popover: #ffffff;
+--popover-foreground: #0b1110;
+--primary: var(--color-primary);
+--primary-foreground: var(--color-primary-foreground);
+--secondary: #f1f5f4;
+--secondary-foreground: #0b1110;
+--muted: #eef2f1;
+--muted-foreground: #5f6b66;
+--accent: var(--color-accent);
+--accent-foreground: var(--color-accent-foreground);
+--destructive: var(--color-destructive);
+--destructive-foreground: #ffffff;
+--border: #e3e7e5;
+--input: #e3e7e5;
+--ring: var(--color-ring);
+--chart-1: var(--color-chart-1);
+--chart-2: var(--color-chart-2);
+--chart-3: var(--color-chart-3);
+--chart-4: var(--color-chart-4);
+--chart-5: var(--color-chart-5);
+--radius: var(--radius-lg);
+--sidebar-background: #ffffff;
+--sidebar-foreground: #2c3a36;
+--sidebar-primary: var(--color-sidebar-primary);
+--sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+--sidebar-accent: #f5f7f6;
+--sidebar-accent-foreground: #2c3a36;
+--sidebar-border: #e6ebe9;
+--sidebar-ring: var(--color-sidebar-ring);
+--surface-1: #ffffff;
+--surface-2: #f7faf9;
+--success: var(--color-success);
+--warning: var(--color-warning);
+--danger: var(--color-danger);
+}
+/* Dark theme overrides */
+.dark {
+--background: var(--color-background);
+--foreground: var(--color-foreground);
+--card: var(--color-card);
+--card-foreground: var(--color-card-foreground);
+--popover: var(--color-popover);
+--popover-foreground: var(--color-popover-foreground);
+--primary: var(--color-primary);
+--primary-foreground: var(--color-primary-foreground);
+--secondary: var(--color-secondary);
+--secondary-foreground: var(--color-secondary-foreground);
+--muted: var(--color-muted);
+--muted-foreground: var(--color-muted-foreground);
+--accent: var(--color-accent);
+--accent-foreground: var(--color-accent-foreground);
+--destructive: var(--color-destructive);
+--destructive-foreground: var(--color-destructive-foreground);
+--border: var(--color-border);
+--input: var(--color-input);
+--ring: var(--color-ring);
+--chart-1: var(--color-chart-1);
+--chart-2: var(--color-chart-2);
+--chart-3: var(--color-chart-3);
+--chart-4: var(--color-chart-4);
+--chart-5: var(--color-chart-5);
+--radius: var(--radius-lg);
+--sidebar-background: var(--color-sidebar);
+--sidebar-foreground: var(--color-sidebar-foreground);
+--sidebar-primary: var(--color-sidebar-primary);
+--sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+--sidebar-accent: var(--color-sidebar-accent);
+--sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+--sidebar-border: var(--color-sidebar-border);
+--sidebar-ring: var(--color-sidebar-ring);
+--surface-1: var(--color-surface-1);
+--surface-2: var(--color-surface-2);
+--success: var(--color-success);
+--warning: var(--color-warning);
+--danger: var(--color-danger);
+}
+}
+@layer base {
+body {
+@apply bg-background text-foreground;
+}
+.container {
+margin-inline: auto;
+padding-inline: 2rem;
+}
+}
+@layer base {
+html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+color-scheme: light;
+}
+.dark html { color-scheme: dark; }
+body {
+background-color: var(--background);
+color: var(--foreground);
+}
+h1, h2, h3, h4 {
+font-family: var(--font-heading);
+color: var(--foreground);
+}
+h1 { font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-weight: 700; letter-spacing: -0.015em; }
+h3 { font-weight: 600; letter-spacing: -0.01em; }
+p { color: var(--foreground); }
+small, .text-muted-foreground { color: var(--muted-foreground); }
+a { color: var(--primary); text-decoration: none; }
+.font-sans { font-family: var(--font-sans); }
+.font-heading { font-family: var(--font-heading); }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
+
+/* Custom dark scrollbar for entire site */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2f2c #141917;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #141917;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #2a2f2c;
+  border-radius: 4px;
+  border: 1px solid #1a1f1d;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #3a3f3c;
+}
+
+*::-webkit-scrollbar-corner {
+  background: #141917;
+}
+
+/* Dark scrollbar for light theme too */
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+:root::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:root::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+:root::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+:root::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Force dark scrollbar in dark theme */
+.dark * {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2f2c #141917;
+}
+
+.dark *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark *::-webkit-scrollbar-track {
+  background: #141917;
+  border-radius: 4px;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: #2a2f2c;
+  border-radius: 4px;
+  border: 1px solid #1a1f1d;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: #3a3f3c;
+}
+
+.dark *::-webkit-scrollbar-corner {
+  background: #141917;
+}
