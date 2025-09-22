@@ -678,6 +678,7 @@ export default function AlarmsManagement({
                   setCommentDraft={(t) =>
                     setCommentDrafts((d) => ({ ...d, [a.id]: t }))
                   }
+                  addComment={addComment}
                 />
               ))}
           </div>
@@ -695,6 +696,7 @@ function AlarmRow({
   onResolve,
   commentDraft,
   setCommentDraft,
+  addComment,
 }: {
   alarm: Alarm;
   selected: boolean;
@@ -703,6 +705,7 @@ function AlarmRow({
   onResolve: (note?: string) => void;
   commentDraft: string;
   setCommentDraft: (t: string) => void;
+  addComment: (alarmId: string, text: string) => void;
 }) {
   const sev = severityStyles[alarm.severity];
   const isMobile = useIsMobile();

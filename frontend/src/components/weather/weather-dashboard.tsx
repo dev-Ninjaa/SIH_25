@@ -210,7 +210,7 @@ export default function WeatherDashboard() {
           latitude: latitude_result,
           longitude: longitude_result,
           elevation,
-          timezone
+          timezone: timezone || 'UTC'
         },
         current: {
           time: currentTime.toISOString(),
