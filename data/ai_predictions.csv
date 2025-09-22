@@ -1,0 +1,5 @@
+date,household_id,predicted_consumption_wh,predicted_generation_wh,recommendation
+2025-09-21,H1,350,380,OK
+2025-09-21,H2,900,750,Share Energy to H2
+2025-09-22,H1,400,200,Expect Shortage - Borrow Credits
+2025-09-22,H2,800,950,Excess Available

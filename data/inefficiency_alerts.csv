@@ -1,0 +1,3 @@
+timestamp,household_id,alert_type,details
+2025-09-20 10:00,H1,Low_Generation,Solar panel output below expected (Cloudy)
+2025-09-20 14:00,H2,Battery_Overheat,Temperature exceeded 35°C

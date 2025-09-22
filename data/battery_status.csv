@@ -1,0 +1,5 @@
+timestamp,household_id,battery_voltage_v,battery_soc_percent,temperature_c
+2025-09-20 08:00,H1,12.1,78,28.4
+2025-09-20 08:00,H2,12.4,85,29.1
+2025-09-20 09:00,H1,12.0,75,28.7
+2025-09-20 09:00,H2,12.3,82,29.4

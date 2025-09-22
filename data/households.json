@@ -1,0 +1,16 @@
+[
+  {
+    "id": "H1",
+    "location": "Village_A_House_1",
+    "solar_capacity_w": 50,
+    "battery_capacity_ah": 5,
+    "status": "active"
+  },
+  {
+    "id": "H2",
+    "location": "Village_A_House_2",
+    "solar_capacity_w": 100,
+    "battery_capacity_ah": 8,
+    "status": "active"
+  }
+]

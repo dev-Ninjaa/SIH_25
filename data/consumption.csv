@@ -1,0 +1,5 @@
+timestamp,household_id,load_power_w,device
+2025-09-20 08:00,H1,0.5,LED_Light
+2025-09-20 08:00,H2,1.0,Phone_Charging
+2025-09-20 09:00,H1,0.5,LED_Light
+2025-09-20 09:00,H2,2.5,Water_Pump
